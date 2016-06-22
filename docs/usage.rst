@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use Yeat another Murmurhash3 bindings. in a project::
+To use Yet Another Murmurhash3 Bindings in a project::
 
     import yammh3

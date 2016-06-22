@@ -1,6 +1,6 @@
-=================================
-Yeat another Murmurhash3 bindings
-=================================
+================================
+Yet Another Murmurhash3 Bindings
+================================
 
 .. image:: https://img.shields.io/pypi/v/yammh3.svg
         :target: https://pypi.python.org/pypi/yammh3

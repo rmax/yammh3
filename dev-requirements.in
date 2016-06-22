@@ -2,16 +2,21 @@
 # This file specifics development requirements. To update the requirements.txt
 # file run:
 #
-#    pip-compile dev-requirements.in > dev-requirements.txt
+#    pip-compile dev-requirements.in -o dev-requirements.txt
 #
-bumpversion
-wheel
-watchdog
+cython
+# tests
+pytest
+coverage
 flake8
 tox
-coverage
+
+# docs
+watchdog
 Sphinx
-cryptography
-PyYAML
-pytest
+
+# meta
+bumpversion
+check-manifest
 pip-tools
+wheel
