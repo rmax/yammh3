@@ -22,7 +22,7 @@ def get_extensions():
 
 setup(
     name='yammh3-tests',
-    version='0.1.0',
+    version='0.1.1',
     packages=['tests'],
     package_data={
         "tests": ['*.pyx', '*.pxd'],
