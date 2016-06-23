@@ -18,7 +18,7 @@ __all__ = ['get_include', 'hash128', 'hash64', 'hash32']
 
 
 def get_include():
-    """Returns includes directories.
+    """Returns the includes directory.
 
     Returns
     -------
@@ -31,18 +31,19 @@ def get_include():
 
 
 def hash128(value, seed=0, signed=True, x64=False):
-    """Returns 128 bits hash for the given value.
+    """Returns a 128 bits hash for the given value.
 
     Parameters
     ----------
     value : unicode or str
         Value to be hashed.
-    seed : int, optional (default: 0)
-        Seed for the hash algorithm.
-    signed : bool, optional (default: True)
-        If True, returns a signed integer, otherwise returns an unsigned integer.
-    x64 : bool, optional (default: False)
-        Whether to use x64 optimized hash functions.
+    seed : int, optional
+        Seed for the hash algorithm. Default is 0.
+    signed : bool, optional
+        If True, returns a signed integer, otherwise returns an unsigned
+        integer. Default is True.
+    x64 : bool, optional
+        Whether to use x64 optimized hash functions. Default is False.
 
     Returns
     -------
@@ -69,14 +70,15 @@ def hash64(value, seed=0, signed=True, low=False, x64=False):
     ----------
     value : unicode or str
         Value to be hashed.
-    seed : int, optional (default: 0)
-        Seed for the hash algorithm.
-    signed : bool, optional (default: True)
-        If True, returns a signed integer, otherwise returns an unsigned integer.
-    low : bool, optional (default: False)
-        Whether to returns low bits rather than high bits.
-    x64 : bool, optional (default: False)
-        Whether to use x64 optimized hash functions.
+    seed : int, optional
+        Seed for the hash algorithm. Default is 0.
+    signed : bool, optional
+        If True, returns a signed integer, otherwise returns an unsigned
+        integer. Default is True.
+    low : bool, optional
+        Whether to returns low bits rather than high bits. Default is False.
+    x64 : bool, optional
+        Whether to use x64 optimized hash functions. Default is False.
 
     Returns
     -------
@@ -105,10 +107,11 @@ def hash32(value, seed=0, signed=True):
     ----------
     value : unicode or str
         Value to be hashed.
-    seed : int, optional (default: 0)
-        Seed for the hash algorithm.
-    signed : bool, optional (default: True)
-        If True, returns a signed integer, otherwise returns an unsigned integer.
+    seed : int, optional
+        Seed for the hash algorithm. Default is 0.
+    signed : bool, optional
+        If True, returns a signed integer, otherwise returns an unsigned
+        integer. Default is True.
 
     Returns
     -------

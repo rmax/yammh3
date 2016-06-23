@@ -8,11 +8,13 @@ cdef extern from "include/MurmurHash3.h" nogil:
     void MurmurHash3_x64_128(const void *key, int len, uint32_t seed, void *out)
 
 
+# Unsigned 128 bits representation as a pair of 64 bits unsigned integers.
 cdef struct uint64x2_t:
     uint64_t high
     uint64_t low
 
 
+# Signed 128 bits representation as a pair of 64 bits signed integers.
 cdef struct int64x2_t:
     int64_t high
     int64_t low
