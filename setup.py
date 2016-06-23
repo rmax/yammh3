@@ -41,10 +41,6 @@ def read_file(filename):
         return fp.read()
 
 
-requirements = [
-    # TODO: put package requirements here
-]
-
 setup(
     name='yammh3',
     version='0.1.0',
@@ -56,7 +52,9 @@ setup(
     packages=list(find_packages('src')),
     package_dir={'': 'src'},
     include_package_data=True,
-    install_requires=requirements,
+    install_requires=[
+        'six>=1.5.2',
+    ],
     license="MIT",
     zip_safe=False,
     keywords='yammh3',
@@ -70,7 +68,11 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
     ],
-    ext_modules=list(find_extensions('src', '*.pyx')),
+    ext_modules=list(find_extensions('src', '*.pyx', **dict(
+        include_dirs=['src/yammh3/'],
+    ))),
     cmdclass={'build_ext': build_ext},
-    setup_requires=['cython>=0.24'],
+    setup_requires=[
+        'cython>=0.24',
+    ],
 )
