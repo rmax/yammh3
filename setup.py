@@ -25,7 +25,8 @@ def find_extensions(dir, pattern, **kwargs):
         pkgdir = os.path.join(dir, pkgname.replace('.', '/'))
         for path in glob.glob(os.path.join(pkgdir, pattern)):
             modname, _ = os.path.splitext(os.path.basename(path))
-            yield Extension('%s.%s' % (pkgname, modname), [path], **kwargs)
+            extname = '%s.%s' % (pkgname, modname)
+            yield Extension(extname, [path], **kwargs)
 
 
 def find_packages(path):
