@@ -77,7 +77,6 @@ We need to compile it as a module, usually by using a setup script:
 
     setup(
         name='yammh3-example',
-        version='0.1.0',
         ext_modules=cythonize([
             Extension('*', ['*.pyx'], include_dirs=[yammh3.get_include()]),
         ])
