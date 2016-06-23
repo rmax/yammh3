@@ -1,4 +1,4 @@
-.PHONY: clean-so clean-test clean-pyc clean-build docs clean
+.PHONY: clean-cython clean-test clean-pyc clean-build docs clean
 .PHONY: check check-manifest check-setup lint
 .PHONY: test test-all coverage
 .PHONY: compile-reqs install-reqs
@@ -23,7 +23,7 @@ help:
 	@echo "clean-build - remove build artifacts"
 	@echo "clean-pyc - remove Python file artifacts"
 	@echo "clean-test - remove test and coverage artifacts"
-	@echo "clean-so - remove compiled extensions"
+	@echo "clean-cython - remove compiled extensions"
 	@echo "lint - check style with flake8"
 	@echo "test - run tests quickly with the default Python"
 	@echo "test-all - run tests on every Python version with tox"
@@ -44,7 +44,7 @@ check-setup:
 check-manifest:
 	check-manifest --ignore ".*"
 
-clean: clean-build clean-pyc clean-test clean-so
+clean: clean-build clean-pyc clean-test clean-cython
 
 clean-build:
 	rm -fr build/
@@ -64,8 +64,12 @@ clean-test:
 	rm -f .coverage
 	rm -fr htmlcov/
 
-clean-so:
+clean-cython:
 	find . -name '*.so' -exec rm -f {} +
+	rm -f src/yammh3/*.c
+	rm -f src/yammh3/*.cpp
+	rm -f tests/*.c
+	rm -f tests/*.cpp
 
 lint:
 	flake8 src tests
