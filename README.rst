@@ -13,7 +13,7 @@ Yet Another Murmurhash3 Bindings
         :alt: Documentation Status
 
 
-CPython/Cython Murmurhash3 bindings.
+Python/Cython Murmurhash3 bindings.
 
 * Free software: MIT license
 * Documentation: https://yammh3.readthedocs.org.
