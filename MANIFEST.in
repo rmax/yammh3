@@ -1,5 +1,4 @@
 graft docs
-graft src
 graft tests
 
 include *.in
@@ -11,6 +10,10 @@ include LICENSE
 include Makefile
 include conftest.py
 
+recursive-include src *.pyx *.pxd
+
 global-exclude __pycache__ *.py[cod]
 global-exclude *.so *.dylib
-global-exclude *.c
+global-exclude *.c *.cpp
+
+graft src/yammh3/include
