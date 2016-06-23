@@ -74,10 +74,15 @@ clean-cython:
 lint:
 	flake8 src tests
 
+build-inplace:
+	python setup.py build_ext --inplace
+	python setup_tests.py build_ext --inplace
+
 develop: clean
 	python setup.py develop -v
 
 test: develop
+	python setup_tests.py build_ext --inplace
 	py.test -v
 
 test-all:
