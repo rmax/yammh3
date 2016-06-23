@@ -1,6 +1,6 @@
-================================
-Yet Another Murmurhash3 Bindings
-================================
+===============================
+Yet Another Murmurhash3 Binding
+===============================
 
 .. image:: https://img.shields.io/pypi/v/yammh3.svg
         :target: https://pypi.python.org/pypi/yammh3
@@ -13,7 +13,7 @@ Yet Another Murmurhash3 Bindings
         :alt: Documentation Status
 
 
-Python/Cython Murmurhash3 bindings.
+Python/Cython Murmurhash3 binding.
 
 * Free software: MIT license
 * Documentation: https://yammh3.readthedocs.org.
@@ -22,7 +22,7 @@ Features
 --------
 
 * Provides a high-level Python API.
-* Provides a low-level Cython bindings.
+* Provides a low-level Cython binding.
 * Python 2 and 3 support.
 
 Example

@@ -65,7 +65,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Yet Another Murmurhash3 Bindings'
+project = u'Yet Another Murmurhash3 Binding'
 copyright = u'2016, Rolando Espinoza'
 
 # The version info for the project you're documenting, acts as replacement
@@ -219,7 +219,7 @@ latex_elements = {
 # [howto/manual]).
 latex_documents = [
     ('index', 'yammh3.tex',
-     u'Yet Another Murmurhash3 Bindings Documentation',
+     u'Yet Another Murmurhash3 Binding Documentation',
      u'Rolando Espinoza', 'manual'),
 ]
 
@@ -250,7 +250,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'yammh3',
-     u'Yet Another Murmurhash3 Bindings Documentation',
+     u'Yet Another Murmurhash3 Binding Documentation',
      [u'Rolando Espinoza'], 1)
 ]
 
@@ -265,7 +265,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     ('index', 'yammh3',
-     u'Yet Another Murmurhash3 Bindings Documentation',
+     u'Yet Another Murmurhash3 Binding Documentation',
      u'Rolando Espinoza',
      'yammh3',
      'One line description of project.',

@@ -38,8 +38,8 @@ is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-Yet Another Murmurhash3 Bindings could always use more documentation, whether as part of the
-official Yet Another Murmurhash3 Bindings docs, in docstrings, or even on the web in blog posts,
+Yet Another Murmurhash3 Binding could always use more documentation, whether as part of the
+official Yet Another Murmurhash3 Binding docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback

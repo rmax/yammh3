@@ -44,7 +44,7 @@ def read_file(filename):
 setup(
     name='yammh3',
     version='0.1.1',
-    description="Python/Cython Murmurhash3 bindings.",
+    description="Python/Cython Murmurhash3 binding.",
     long_description=read_file('README.rst') + '\n\n' + read_file('HISTORY.rst'),
     author="Rolando Espinoza",
     author_email='rolando at rmax.io',

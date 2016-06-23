@@ -8,7 +8,7 @@ Installation
 Stable release
 --------------
 
-To install Yet Another Murmurhash3 Bindings, run this command in your terminal:
+To install Yet Another Murmurhash3 Binding, run this command in your terminal:
 
 .. code-block:: console
 
@@ -24,7 +24,7 @@ you through the process.
 From sources
 ------------
 
-The sources for Yet Another Murmurhash3 Bindings can be downloaded from the `Github repo`_.
+The sources for Yet Another Murmurhash3 Binding can be downloaded from the `Github repo`_.
 
 You can either clone the public repository:
 

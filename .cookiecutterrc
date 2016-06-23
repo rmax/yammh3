@@ -4,9 +4,9 @@ cookiecutter:
     email: rolando at rmax.io
     full_name: Rolando Espinoza
     github_username: rolando
-    project_name: Yet Another Murmurhash3 Bindings
+    project_name: Yet Another Murmurhash3 Binding
     project_package: yammh3
-    project_short_description: CPython/Cython Murmurhash3 bindings.
+    project_short_description: Python/Cython Murmurhash3 binding.
     project_slug: yammh3
     pypi_username: rolando
     release_date: '2016-06-17'
