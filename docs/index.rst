@@ -12,10 +12,8 @@ Contents:
    :maxdepth: 2
 
    readme
-   installation
    usage
-   contributing
-   authors
+   installation
    history
 
 Indices and tables
@@ -23,5 +21,3 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`
-
