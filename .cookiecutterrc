@@ -13,5 +13,5 @@ cookiecutter:
     use_cython: y
     use_pypi_deployment_with_travis: n
     use_pytest: y
-    version: 0.1.0
+    version: 0.2.0dev
     year: '2016'
