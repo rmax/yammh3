@@ -12,7 +12,7 @@ from ._yammh3 import (
 
 __author__ = 'Rolando Espinoza'
 __email__ = 'rolando at rmax.io'
-__version__ = '0.1.2dev'
+__version__ = '0.1.2'
 
 __all__ = ['get_include', 'hash128', 'hash64', 'hash32']
 
