@@ -2,7 +2,7 @@
 .PHONY: check check-manifest check-setup lint
 .PHONY: test test-all coverage
 .PHONY: compile-reqs install-reqs
-.PHONY: release dist install
+.PHONY: release dist install build-inplace
 define BROWSER_PYSCRIPT
 import os, webbrowser, sys
 try:
@@ -14,6 +14,8 @@ webbrowser.open("file://" + pathname2url(os.path.abspath(sys.argv[1])))
 endef
 export BROWSER_PYSCRIPT
 BROWSER := python -c "$$BROWSER_PYSCRIPT"
+
+SPHINX_BUILD := html
 
 help:
 	@echo "check - check setup, code style, setup, etc"
@@ -108,8 +110,8 @@ docs:
 	rm -f docs/modules.rst
 	sphinx-apidoc -o docs/ src/yammh3
 	$(MAKE) -C docs clean
-	$(MAKE) -C docs html
-	$(BROWSER) docs/_build/html/index.html
+	$(MAKE) -C docs $(SPHINX_BUILD)
+	$(BROWSER) docs/_build/$(SPHINX_BUILD)/index.html
 
 servedocs: docs
 	watchmedo shell-command -p '*.rst' -c '$(MAKE) -C docs html' -R -D .

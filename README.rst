@@ -9,7 +9,7 @@ Yet Another Murmurhash3 Binding
         :target: https://travis-ci.org/rolando/yammh3
 
 .. image:: https://readthedocs.org/projects/yammh3/badge/?version=latest
-        :target: http://yammh3.readthedocs.io/en/latest/?badge=latest
+        :target: https://readthedocs.org/projects/yammh3/?badge=latest
         :alt: Documentation Status
 
 
